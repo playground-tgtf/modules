@@ -1,6 +1,6 @@
 output "s3_bucket_id" {
   description = "ID of the S3 bucket"
-  value = var.is_directory_bucket ? aws_s3_directory_bucket.this[0].bucket : aws_s3_bucket.this[0].id
+  value = aws_s3_bucket.this[0].id
 }
 
 output "s3_bucket_arn" {
