@@ -236,6 +236,12 @@ variable "intelligent_tiering" {
   default     = {}
 }
 
+variable "is_directory_bucket" {
+  description = "If the s3 bucket created is a directory bucket"
+  type        = bool
+  default     = false
+}
+
 # below variable might be useful in future aspects.
 
 # variable "environment" {
